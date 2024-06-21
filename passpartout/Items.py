@@ -9,14 +9,23 @@ class ItemData(typing.NamedTuple):
     category: str
     code: int
     item_type: ItemClassification = ItemClassification.filler
-    weight: typing.Optional[int] = None
+    max_quantity: int = 1
     
 item_table: typing.Dict[str, ItemData] = {
-    "$50": ItemData("Money", 6455000, ItemClassification.filler, 64),
-    "$100": ItemData("Money", 6455001, ItemClassification.filler, 32),
-    "$250": ItemData("Money", 6455002, ItemClassification.filler, 16),
-    "$500": ItemData("Money", 6455003, ItemClassification.filler, 8),
-    "$1000": ItemData("Money", 6455004, ItemClassification.filler, 4),
-    "$2500": ItemData("Money", 6455005, ItemClassification.filler, 2),
-    "winor": ItemData("Progress", 6455006, ItemClassification.progression, 2),
+    "Progressive Fame": ItemData("Fame", 6455001, ItemClassification.progression, 8),
+    "Spray Can Tool": ItemData("Tool", 6455002, ItemClassification.useful),
+    "Caligraphy Pen Tool": ItemData("Tool", 6455003, ItemClassification.useful),
+    "$50": ItemData("Money", 6455004, ItemClassification.filler, 5),
+    "$100": ItemData("Money", 6455005, ItemClassification.filler, 5),
+    "$150": ItemData("Money", 6455006, ItemClassification.filler, 5),
+    "$200": ItemData("Money", 6455007, ItemClassification.filler, 3),
+    "$250": ItemData("Money", 6455008, ItemClassification.filler, 3),
+    "$500": ItemData("Money", 6455009, ItemClassification.filler, 3),
+    "$750": ItemData("Money", 6455010, ItemClassification.filler, 3),
+    "$1000": ItemData("Money", 6455011, ItemClassification.filler, 3),
+    "$1500": ItemData("Money", 6455012, ItemClassification.filler),
+    "$2000": ItemData("Money", 6455013, ItemClassification.filler),
+    "$2500": ItemData("Money", 6455014, ItemClassification.filler),
+    "$5000": ItemData("Money", 6455015, ItemClassification.filler),
+    "$7500": ItemData("Money", 6455016, ItemClassification.filler),
     }
