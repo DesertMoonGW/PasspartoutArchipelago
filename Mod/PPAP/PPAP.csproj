@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>PPAP</AssemblyName>
+    <Product>Archipelago implementation for Passpartout</Product>
+    <Version>0.1.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RestoreAdditionalProjectSources>
+      https://api.nuget.org/v3/index.json;
+      https://nuget.bepinex.dev/v3/index.json;
+      https://nuget.samboy.dev/v3/index.json
+    </RestoreAdditionalProjectSources>
+    <RootNamespace>PPAP</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Archipelago.MultiClient.Net" Version="6.1.1" />
+	<PackageReference Include="Newtonsoft.Json" />
+    <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="UnityEngine.Modules" Version="2019.4.7" IncludeAssets="compile" />
+  </ItemGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+  </ItemGroup>
+	
+	<ItemGroup>
+		<Reference Include="0Harmony">
+		  <HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\BepInEx\core\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+		  <HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\Passpartout_Data\Managed\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx">
+		  <HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\BepInEx\core\BepInEx.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+		  <HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\Passpartout_Data\Managed\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+		  <HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\Passpartout_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+		  <HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\Passpartout_Data\Managed\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="zxing.unity">
+			<HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\Passpartout_Data\Managed\zxing.unity.dll</HintPath>
+		</Reference>
+		<Reference Include="Archipelago.MultiClient.Net">
+			<HintPath>E:\Sabrina\SteamLibrary\steamapps\common\Passpartout\Passpartout_Data\Managed\Archipelago.MultiClient.Net.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+</Project>
