@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z3NAzO1jgAReFsQY2Ohb5OpW/Ly+R3gY8394sD+BmHev8IjoUx3NW7iMULBwKwBQjt9MJvzx5kDnyJ6gYpCeyA==",
+  "dgSpecHash": "doJovRN7ltHIWpGhbOH1qFTSF7gAYUiJqspTBALz/+A/vThNaVtZx/1/vLHYzTB8sATwgzH8QbuCQDBlfcH6OA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sabrina\\source\\repos\\PasspartoutArchipelago\\Mod\\PPAP\\PPAP.csproj",
+  "projectFilePath": "D:\\Sabrina\\Desktop\\Archipelago\\MYMODS\\Passpartout\\Passpartout Archipelago\\PPAP\\PPAP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sabrina\\.nuget\\packages\\archipelago.multiclient.net\\6.1.1\\archipelago.multiclient.net.6.1.1.nupkg.sha512",
     "C:\\Users\\Sabrina\\.nuget\\packages\\bepinex.analyzers\\1.0.8\\bepinex.analyzers.1.0.8.nupkg.sha512",

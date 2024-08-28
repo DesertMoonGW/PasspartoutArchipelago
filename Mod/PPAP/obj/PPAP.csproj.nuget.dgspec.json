@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sabrina\\source\\repos\\PasspartoutArchipelago\\Mod\\PPAP\\PPAP.csproj": {}
+    "D:\\Sabrina\\Desktop\\Archipelago\\MYMODS\\Passpartout\\Passpartout Archipelago\\PPAP\\PPAP.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sabrina\\source\\repos\\PasspartoutArchipelago\\Mod\\PPAP\\PPAP.csproj": {
+    "D:\\Sabrina\\Desktop\\Archipelago\\MYMODS\\Passpartout\\Passpartout Archipelago\\PPAP\\PPAP.csproj": {
       "version": "0.1.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sabrina\\source\\repos\\PasspartoutArchipelago\\Mod\\PPAP\\PPAP.csproj",
+        "projectUniqueName": "D:\\Sabrina\\Desktop\\Archipelago\\MYMODS\\Passpartout\\Passpartout Archipelago\\PPAP\\PPAP.csproj",
         "projectName": "PPAP",
-        "projectPath": "C:\\Users\\Sabrina\\source\\repos\\PasspartoutArchipelago\\Mod\\PPAP\\PPAP.csproj",
+        "projectPath": "D:\\Sabrina\\Desktop\\Archipelago\\MYMODS\\Passpartout\\Passpartout Archipelago\\PPAP\\PPAP.csproj",
         "packagesPath": "C:\\Users\\Sabrina\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sabrina\\source\\repos\\PasspartoutArchipelago\\Mod\\PPAP\\obj\\",
+        "outputPath": "D:\\Sabrina\\Desktop\\Archipelago\\MYMODS\\Passpartout\\Passpartout Archipelago\\PPAP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sabrina\\AppData\\Roaming\\NuGet\\NuGet.Config",

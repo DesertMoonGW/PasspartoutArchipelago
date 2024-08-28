@@ -11,8 +11,28 @@ using Archipelago.MultiClient.Net.Enums;
 namespace PPAP.Patches
 {
     [HarmonyPatch(typeof(MainMenuUI))]
-    class MainMenuUIPatch
+    class MainMenuUIPatch : MonoBehaviour
     {
+        [HarmonyPatch("Start")]
+        [HarmonyPostfix]
+        static void ChangeMenu()
+        {
+            if (!GameObject.Find("APHandlerObj"))
+            {
+                Debug.Log("No APHandlerObj found, creating one...");
+                GameObject APHO = new GameObject("APHandlerObj");
+                APHO.AddComponent<APHandler>();
+                DontDestroyOnLoad(APHO);
+                GameObject APHandlerObj = GameObject.Instantiate<GameObject>(APHO);
+            }
+            else
+            {
+                Debug.Log("APHandlerObj found, no need to make a new one!");
+            }
+
+            APConnectMenu();
+        }
+
         static void APConnectMenu()
         {
             Debug.Log("Creating AP Connect Menu.");
@@ -24,6 +44,7 @@ namespace PPAP.Patches
             APButtonText.GetComponent<Text>().text = "Archipelago";
             APButtonText.GetComponent<Text>().horizontalOverflow = HorizontalWrapMode.Overflow;
             APButton.GetComponent<UnityEngine.UI.Button>().targetGraphic = APButtonText.GetComponent<Text>();
+
 
 
 
@@ -122,7 +143,7 @@ namespace PPAP.Patches
             Transform.Destroy(THEBOX.transform.Find("Accept Button"));
 
             NABO.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(delegate {
-                APHandler.APConnect(InputBase.GetComponent<InputField>().text, InputSlot.GetComponent<InputField>().text, InputPass.GetComponent<InputField>().text, APmenu);
+                GameObject.Find("APHandlerObj").GetComponent<APHandler>().APConnect(InputBase.GetComponent<InputField>().text, InputSlot.GetComponent<InputField>().text, InputPass.GetComponent<InputField>().text, APmenu);
             });
             APmenu.SetActive(false);
         }
@@ -136,12 +157,6 @@ namespace PPAP.Patches
             if (IsAP == true) return;
         }
 
-        [HarmonyPatch("Start")]
-        [HarmonyPostfix]
-		static void ChangeMenu()
-        {
-            APConnectMenu();
-        }
         
     }
 }
