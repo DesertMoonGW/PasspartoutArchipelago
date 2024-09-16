@@ -11,7 +11,8 @@ Receive Checks of Money, Tools, and Fame to keep you afloat and reach an ending.
     - Currently, the only version tested to work is the Steam Windows version. This is not tested for Mobile, Linux, Mac, or other platforms.
 2. Run Passpartout at least once before continuing.
 3. Download and install the latest release build of [BepInEx](https://github.com/BepInEx/BepInEx/releases).
-    - Download the patcher and drop it into your Passpartout game folder (should look something like `\steamapps\common\Passpartout`)
+    - Download the patcher and drop it into your Passpartout game folder (should look something like `\steamapps\common\Passpartout`).
+    - Download the win_x64 .zip and add the contents of that into your Passpartout game folder as well.
     - Run the patcher and wait until it says Success, it should then close itself automatically.
 4. Run Passpartout with BepInEx installed at least once before continuing.
 5. Download and install [Archipelago.Multiworld.Net](https://github.com/ArchipelagoMW/Archipelago.MultiClient.Net/releases).
