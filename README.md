@@ -8,6 +8,16 @@ Receive Checks of Money, Tools, and Fame to keep you afloat and reach an ending.
 ## Installation
 
 1. Purchase, Download, and Install Passpartout: The Starving Artist.
-2. Download and install BepInEx.
-3. Download and install Archipelago.Multiworld.Net.
-4. Download and install this mod from the releases page.
+    - Currently, the only version tested to work is the Steam Windows version. This is not tested for Mobile, Linux, Mac, or other platforms.
+2. Run Passpartout at least once before continuing.
+3. Download and install the latest release build of [BepInEx](https://github.com/BepInEx/BepInEx/releases).
+    - Download the patcher and drop it into your Passpartout game folder (should look something like `\steamapps\common\Passpartout`)
+    - Run the patcher and wait until it says Success, it should then close itself automatically.
+4. Run Passpartout with BepInEx installed at least once before continuing.
+5. Download and install [Archipelago.Multiworld.Net](https://github.com/ArchipelagoMW/Archipelago.MultiClient.Net/releases).
+    - This is the ` Archipelago.MultiClient.Net.X.X.X.nupkg` file, where X.X.X is the version number.
+    - Open this with 7-Zip, inside go to `lib/netstandard2.0`.
+    - Drag and drop the files `Archipelago.MultiClient.Net.dll` and `Newtonsoft.Json.dll` into `Passpartout\BepInEx\plugins`.
+6. Download and install this mod from the releases page.
+    - Drag and drop `PPAP.dll` into `Passpartout\BepInEx\plugins`
+7. Run Passpartout, if you did everything right there should be a new button that says "Archipelago". This will open a window that asks you to enter the necessary information, then press the checkmark when ready to connect and it will start. Enjoy!
